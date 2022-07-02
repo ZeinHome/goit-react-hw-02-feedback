@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { ListBtn, ListItem, Btn } from './FeedbackOptions.styled';
 
 function FeedbackOptions({ options, onBtnClick }) {
@@ -13,3 +14,8 @@ function FeedbackOptions({ options, onBtnClick }) {
 }
 
 export default FeedbackOptions;
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string),
+  onBtnClick: PropTypes.func,
+};
