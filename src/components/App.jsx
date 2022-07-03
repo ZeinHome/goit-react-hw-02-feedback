@@ -30,12 +30,12 @@ class App extends Component {
 
     return (
       <Container>
-        <Section title={'Please leave feedback'} />
+        <Section title="Please leave feedback" />
         <FeedbackOptions
           options={Object.keys(this.state)}
           onBtnClick={stateUpdate}
         />
-        <Section title={'Statistics'} />
+        <Section title="Statistics" />
         {countTotalFeedback() > 0 ? (
           <Statistics
             good={good}
